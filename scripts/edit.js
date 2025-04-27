@@ -28,7 +28,7 @@ async function updateSong() {
     };
          
      // Send PUT request with JSON-encoded song to Music API
-    const response = await fetch("http://localhost:3000/api/songs/" + songID, {
+    const response = await fetch("https://inexpensive-classy-gallon.glitch.me/api/songs/" + songID, {
        method: "PUT",
        headers: {
           "Content-Type": "application/json"
