@@ -3,40 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Song Front End</title>
+    <title>Add a Song</title>
     <script src="scripts/add_song.js"></script>
+    <script defer src="scripts/auth.js"></script>
+    <script defer src="scripts/init.js"></script>
 </head>
 <body>
     <nav>
         <a href="index.html">All Songs</a>
         <a href="add_song.html">Add Songs</a>
+        <a href="delete.html">Delete Songs</a>
+        <button id="logout" style="float: right;">Logout</button>
     </nav>
     <h1>Add a Song</h1>
     <form>
         <div>
             <label for="title">Title:</label>
             <input type="text" id="title">
-         </div>
-         <div>
+        </div>
+        <div>
             <label for="artist">Artist:</label>
             <input type="text" id="artist">
-         </div>
-         <div>
+        </div>
+        <div>
             <label for="released">Released:</label>
             <input type="date" id="released">
-         </div>
-         <div>
+        </div>
+        <div>
             <label for="popularity">Popularity:</label>
-            <input type="number" min="1" max="10" id="popularity">
-         </div>
-         <div>
+            <input type="number" min=1 max=10 id="popularity">
+        </div>
+        <div>
             <label for="genre">Genre:</label>
             <input type="text" id="genre">
-         </div>
-         <div>
+        </div>
+        <div>
             <input type="button" id="addBtn" value="Add Song">
-         </div> 
-         <div id="error"></div>
-      </form>
+        </div>
+        <div id="error"></div>
+    </form>
+    
 </body>
 </html>
