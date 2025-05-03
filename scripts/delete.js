@@ -19,7 +19,7 @@ async function getAllSongs() {
 async function deleteSong(){
     //grab id of selected song from the dropdown
     const songId = document.querySelector("#songDropDown option:checked").value;
-    const response = await fetch("http://localhost:3000/api/songs/" + songId, {
+    const response = await fetch("https://cut-laser-humor.glitch.me/api/songs/" + songId, {
         method: "DELETE"
     });
 
