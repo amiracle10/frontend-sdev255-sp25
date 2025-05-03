@@ -5,7 +5,7 @@ addEventListener("DOMContentLoaded", async function(){
 
 //get all songs retrieves a list of songs and sticks them in the dropdown
 async function getAllSongs() {
-    const response = await fetch("http://localhost:3000/api/songs")
+    const response = await fetch("https://cut-laser-humor.glitch.me/api/songs/")
     if (response.ok){
         const songs = await response.json()
         let html = ""
